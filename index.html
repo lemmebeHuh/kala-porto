@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio</title>
+    <meta name="description" content="A creative design portfolio showcasing visual arts and brand identity.">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- We use a mix of fonts to recreate the eclectic typography of the reference -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Press+Start+2P&family=Rubik+Mono+One&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Popup Navigation Menu -->
+    <div class="nav-overlay" id="navOverlay">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="#about" class="popup-link"><span class="nav-num">01.</span> About</a></li>
+                <li><a href="#resume" class="popup-link"><span class="nav-num">02.</span> Experience</a></li>
+                <li><a href="#skills" class="popup-link"><span class="nav-num">03.</span> Skills</a></li>
+                <li><a href="#contents" class="popup-link"><span class="nav-num">04.</span> Contents</a></li>
+                <li><a href="#contact" class="popup-link"><span class="nav-num">05.</span> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sticky Hamburger Button -->
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <div class="wrapper">
+        <header>
+            <div class="name"><a href="#" class="nav-link">SANG KALA AJI</a></div>
+            <div class="header-right">
+            </div>
+        </header>
+
+        <main>
+            <!-- Background Typography -->
+            <div class="hero-text">
+                <span class="letter font-pixel">P</span>
+                <span class="letter font-outline">O</span>
+                <span class="letter font-pixel">R</span>
+                <span class="letter font-bold">T</span>
+                <span class="letter font-mono">F</span>
+                <span class="letter font-outline">O</span>
+                <span class="letter font-serif">L</span>
+                <span class="letter font-tall">I</span>
+                <span class="letter font-star">✱</span>
+            </div>
+
+            <!-- Image Placeholders (Visual Arts) -->
+            <div class="art-grid" id="artGrid">
+                <!-- User can replace the inline style background with actual images or use the img tags -->
+                <div class="art-placeholder item-1 parallax" data-speed="0.05">
+                    <div class="placeholder-content">Art 1</div>
+                    <img src="life.png" alt="" class="user-art ">
+                </div>
+                <div class="art-placeholder item-2 parallax" data-speed="-0.03">
+                    <div class="placeholder-content">Art 2</div>
+                    <img src="peace.jpg" alt="" class="user-art ">
+                </div>
+                <div class="art-placeholder item-3 parallax" data-speed="0.04">
+                    <div class="placeholder-content">Art 3</div>
+                    <img src="runajai.png" alt="" class="user-art ">
+                </div>
+                <div class="art-placeholder item-4 parallax" data-speed="-0.06">
+                    <div class="placeholder-content">Art 4</div>
+                    <img src="" alt="" class="user-art ">
+                </div>
+                <div class="art-placeholder item-5 parallax" data-speed="0.02">
+                    <div class="placeholder-content">Art 5</div>
+                    <img src="" alt="" class="user-art ">
+                </div>
+                <div class="art-placeholder item-6 parallax" data-speed="-0.04">
+                    <div class="placeholder-content">Art 6</div>
+                    <img src="" alt="" class="user-art ">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="services">
+                GRAPHIC & WEB DESIGN<br>
+                ILLUSTRATION<br>
+                BRAND IDENTITY
+            </div>
+            <div class="year">2026</div>
+        </footer>
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 class="about-heading">[.ABOUT ME ]</h2>
+            
+            <p class="about-text-top">
+                HALO, SAYA KALLA. MAHASISWA SISTEM INFORMASI DENGAN PASSION BESAR DI PERSIMPANGAN <span class="highlight-blue">TEKNOLOGI & VISUAL CREATIVE.</span>
+            </p>
+            
+            <div class="about-image-wrapper">
+                <div class="star-graphic">✱</div>
+                <div class="about-image-placeholder">
+                    <img src="1profileaji.png" alt="About Me" class="user-art">
+                </div>
+            </div>
+            
+            <p class="about-text-bottom">
+                MEMADUKAN LOGIKA PENGEMBANGAN WEB DENGAN ESTETIKA DESAIN GRAFIS UNTUK MENCIPTAKAN <span class="highlight-yellow">SOLUSI DIGITAL YANG MENARIK.</span> DI LUAR NGODING & DESAIN, SAYA AKTIF PRODUKSI MUSIK SERTA <span class="highlight-pink">BERSEPEDA & LARI.</span>
+            </p>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-section">
+        <div class="resume-container">
+            <div class="resume-row">
+                <div class="resume-col">
+                    <div class="resume-header">
+                        <span class="icon-asterisk blue-asterisk">✱</span>
+                        <h2>CONTACT</h2>
+                    </div>
+                    <div class="resume-content contact-list">
+                        <a href="tel:+6285795603927" class="contact-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +62 857 9560 3927
+                        </a>
+                        <a href="mailto:sangkalalaji98@gmail.com" class="contact-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            sangkalalaji98@gmail.com
+                        </a>
+                        <div class="contact-link location">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Bandung, Indonesia
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-col align-bottom">
+                    <div class="resume-content contact-list">
+                        <a href="https://instagram.com/aji___sk" class="contact-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            @aji___sk
+                        </a>
+                        <a href="https://linkedin.com/in/sangkalaaji" class="contact-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            Sang Kala Aji
+                        </a>
+                        <a href="https://behance.net/sangkalaaji" class="contact-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14V6h4a3 3 0 0 1 0 6H4"></path><path d="M4 14h5a3 3 0 0 1 0 6H4V14z"></path><path d="M15 10h4"></path><path d="M14 14h5v6h-5v-6z"></path></svg>
+                            Behance
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="solid-divider">
+
+            <div class="resume-row">
+                <div class="resume-col">
+                    <div class="resume-header">
+                        <span class="icon-asterisk pink-asterisk">✱</span>
+                        <h2>PROFESSIONAL<br>EXPERIENCES</h2>
+                    </div>
+                    <div class="resume-content">
+                        <div class="resume-item">
+                            <div class="resume-date">2050 - Present</div>
+                            <div class="resume-info">
+                                <h3>Ci i O</h3>
+                                <h4>Kalla Studio</h4>
+                            </div>
+                        </div>
+                        <div class="resume-item">
+                            <div class="resume-date">2025</div>
+                            <div class="resume-info">
+                                <h3>Content Creator Intern</h3>
+                                <h4>BERANI LAUNDRY SUPPORT SYSTEM</h4>
+                            </div>
+                        </div>
+                        <div class="resume-item">
+                            <div class="resume-date">2025</div>
+                            <div class="resume-info">
+                                <h3>Freelance Web Developer</h3>
+                                <h4>PKID</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-col">
+                    <div class="resume-header">
+                        <span class="icon-asterisk yellow-asterisk">✱</span>
+                        <h2>DEGREES</h2>
+                    </div>
+                    <div class="resume-content">
+                        <div class="resume-item">
+                            <div class="resume-date">Present (Semester 8)</div>
+                            <div class="resume-info">
+                                <h3>S1 Sistem Informasi</h3>
+                                <h4>STMIK Bandung</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <div class="corner-bottom-left"></div>
+            <div class="corner-bottom-right"></div>
+            
+            <div class="skills-grid">
+                <div class="skills-col">
+                    <div class="skills-header">
+                        <h2>SOFTWARE SKILLS</h2>
+                    </div>
+                    <div class="skills-content">
+                        <div class="skill-tag">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            Adobe Photoshop
+                        </div>
+                        <div class="skill-tag">
+                            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                            Premiere Pro
+                        </div>
+                        <div class="skill-tag">
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            Canva
+                        </div>
+                        <div class="skill-tag">
+                            <svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                            FL Studio
+                        </div>
+                        <div class="skill-tag">
+                            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            Capcut
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-col">
+                    <div class="skills-header">
+                        <h2>CORE SKILLS</h2>
+                    </div>
+                    <div class="skills-content">
+                        <div class="skill-tag">Web Development</div>
+                        <div class="skill-tag">Graphic Design</div>
+                        <div class="skill-tag">Video Editing</div>
+                        <div class="skill-tag">Content Creation</div>
+                        <div class="skill-tag">Music Production</div>
+                    </div>
+                </div>
+                
+                <div class="skills-col">
+                    <div class="skills-header">
+                        <h2>LANGUAGES</h2>
+                    </div>
+                    <div class="skills-content">
+                        <div class="skill-tag">Bahasa Indonesia (Native)</div>
+                        <div class="skill-tag">English (Intermediate)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+
+    <section id="contents" class="contents-section">
+        <div class="contents-container">
+            <!-- Large Title with Mixed Typography -->
+            <div class="contents-title hero-text">
+                <span class="letter font-pixel"><span class="skew-letter">C</span></span>
+                <span class="letter font-outline"><span class="skew-letter">O</span></span>
+                <span class="letter font-bold"><span class="skew-letter">N</span></span>
+                <span class="letter font-mono"><span class="skew-letter">T</span></span>
+                <span class="letter font-tall"><span class="skew-letter">E</span></span>
+                <span class="letter font-pixel"><span class="skew-letter">N</span></span>
+                <span class="letter font-serif"><span class="skew-letter">T</span></span>
+                <span class="letter font-bold" style="transform: scaleY(1.4) scaleX(0.8); margin-left: 1vw;"><span class="skew-letter">S</span></span>
+            </div>
+
+            <!-- List Grid -->
+            <div class="contents-grid">
+                <div class="contents-col">
+                    <a href="#project-1" class="content-item" style="text-decoration: none;">
+                        <div class="content-number" style="color: var(--primary-blue);">01</div>
+                        <div class="content-info">
+                            <h3>WEB DEV & IT SOLUTIONS</h3>
+                            <p>Sistem Antrean Klinik & NgeData<br>Sistem Pelacakan Servis PKID</p>
+                        </div>
+                    </a>
+                    <a href="#project-2" class="content-item" style="text-decoration: none;">
+                        <div class="content-number" style="color: var(--primary-pink);">02</div>
+                        <div class="content-info">
+                            <h3>CONTENT CREATION & VIDEO</h3>
+                            <p>BERANI LAUNDRY SUPPORT SYSTEM</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="contents-col">
+                    <a href="#project-3" class="content-item" style="text-decoration: none;">
+                        <div class="content-number" style="color: var(--primary-yellow);">03</div>
+                        <div class="content-info">
+                            <h3>GRAPHIC DESIGN & PHYSICAL MEDIA</h3>
+                            <p>Rilisan Fisik Independen</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer for this section -->
+            <div class="contents-footer">
+                <div>Contents / Portfolio 2026</div>
+                <div>SANG KALA AJI</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT DIVIDER: WEB DEV -->
+    <section id="project-1" class="project-divider-section">
+        <div class="divider-container">
+            
+            <div class="divider-main">
+                <div class="divider-number">
+                    <span class="icon-asterisk blue-asterisk">✱</span>
+                    <span>01.</span>
+                </div>
+                <div class="divider-title">
+                    <h2>WEB DEV</h2>
+                </div>
+            </div>
+
+            <div class="divider-footer">
+                <div class="divider-projects">
+                    Sistem Antrean Klinik<br>Sistem Pelacakan PKID
+                </div>
+                <div class="divider-year">
+                    2026
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- PROJECT GALLERY -->
+    <section class="project-gallery-section">
+        <div class="gallery-header-wrapper">
+            <div class="gallery-header-top">
+                <div class="gallery-title">
+                    <strong>01.</strong> WEB DEV & IT SOLUTIONS
+                </div>
+                <div class="gallery-project">
+                    PWA & Sistem Informasi
+                </div>
+            </div>
+            <div class="gallery-header-bottom">
+                <div class="gallery-tools">
+                    Implemented in<br>
+                    <span class="tools-highlight">Python, Laravel, React/Next.js</span>
+                </div>
+                <div class="gallery-like">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="life.png" class="user-art "></div>
+            <div class="gallery-item"><img src="" class="user-art "></div>
+            <div class="gallery-item"><img src="peace.jpg" class="user-art "></div>
+            <div class="gallery-item"><img src="" class="user-art "></div>
+            <div class="gallery-item"><img src="runajai.png" class="user-art "></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+        </div>
+
+        <div class="project-details">
+            <div class="details-left">
+                <h3>.TASK</h3>
+                <p>Mengembangkan Progressive Web App (PWA) untuk manajemen antrean online klinik sebagai Tugas Akhir, membangun tool "NgeData" untuk form desinfeksi medis, serta membangun fungsionalitas pelacakan progres status servis barang secara akurat di PKID.</p>
+            </div>
+            <div class="details-right">
+                <div class="detail-column">
+                    <h4>Project</h4>
+                    <p>Web Apps & Systems</p>
+                </div>
+                <div class="detail-column">
+                    <h4>Focus</h4>
+                    <p>Fullstack<br>Frontend<br>Backend</p>
+                </div>
+                <div class="detail-column year-column">
+                    <div class="year-text">
+                        <h4>Year</h4>
+                        <p>2025/2026</p>
+                    </div>
+                    <div class="arrow-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M7 7l10 10M17 7v10H7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROJECT DIVIDER: CONTENT CREATION -->
+    <section id="project-2" class="project-divider-section">
+        <div class="divider-container">
+            <div class="divider-main">
+                <div class="divider-number">
+                    <span class="icon-asterisk blue-asterisk">✱</span>
+                    <span>02.</span>
+                </div>
+                <div class="divider-title">
+                    <h2 style="font-size: 11vw;">CONTENT</h2>
+                </div>
+            </div>
+            <div class="divider-footer">
+                <div class="divider-projects">BERANI LAUNDRY</div>
+                <div class="divider-year">2025</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT GALLERY 2 -->
+    <section class="project-gallery-section">
+        <div class="gallery-header-wrapper">
+            <div class="gallery-header-top">
+                <div class="gallery-title"><strong>02.</strong> CONTENT CREATION & VIDEO EDITING</div>
+                <div class="gallery-project">BERANI LAUNDRY SUPPORT SYSTEM</div>
+            </div>
+            <div class="gallery-header-bottom">
+                <div class="gallery-tools">Implemented in<br><span class="tools-highlight">Video Editor & Adobe Photoshop</span></div>
+                <div class="gallery-like"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+            </div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+        </div>
+        <div class="project-details">
+            <div class="details-left">
+                <h3>.TASK</h3>
+                <p>Merancang dan memproduksi materi visual serta video editing untuk keperluan konten digital dan promosi startup BERANI LAUNDRY SUPPORT SYSTEM.</p>
+            </div>
+            <div class="details-right">
+                <div class="detail-column"><h4>Project</h4><p>Digital Promotion</p></div>
+                <div class="detail-column"><h4>Focus</h4><p>Content Creator<br>Video Editing<br>Visual Asset</p></div>
+                <div class="detail-column year-column">
+                    <div class="year-text"><h4>Year</h4><p>2025</p></div>
+                    <div class="arrow-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"><path d="M7 7l10 10M17 7v10H7" /></svg></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT DIVIDER: GRAPHIC DESIGN -->
+    <section id="project-3" class="project-divider-section">
+        <div class="divider-container">
+            <div class="divider-main">
+                <div class="divider-number">
+                    <span class="icon-asterisk blue-asterisk">✱</span>
+                    <span>03.</span>
+                </div>
+                <div class="divider-title">
+                    <h2 style="font-size: 11vw;">GRAPHICS</h2>
+                </div>
+            </div>
+            <div class="divider-footer">
+                <div class="divider-projects">Rilisan Fisik Independen</div>
+                <div class="divider-year">2026</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT GALLERY 3 -->
+    <section class="project-gallery-section">
+        <div class="gallery-header-wrapper">
+            <div class="gallery-header-top">
+                <div class="gallery-title"><strong>03.</strong> GRAPHIC DESIGN & PHYSICAL MEDIA</div>
+                <div class="gallery-project">Personal Project</div>
+            </div>
+            <div class="gallery-header-bottom">
+                <div class="gallery-tools">Implemented in<br><span class="tools-highlight">Adobe Photoshop</span></div>
+                <div class="gallery-like"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+            </div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+            <div class="gallery-item"><img src="" class="user-art hidden"></div>
+        </div>
+        <div class="project-details">
+            <div class="details-left">
+                <h3>.TASK</h3>
+                <p>Menggarap desain visual kreatif yang meliputi layouting majalah indie (zine), poster, dan perancangan sampul CD fisik.</p>
+            </div>
+            <div class="details-right">
+                <div class="detail-column"><h4>Project</h4><p>Physical Media</p></div>
+                <div class="detail-column"><h4>Focus</h4><p>Graphic Design<br>Layouting<br>Print</p></div>
+                <div class="detail-column year-column">
+                    <div class="year-text"><h4>Year</h4><p>2025 - 2026</p></div>
+                    <div class="arrow-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"><path d="M7 7l10 10M17 7v10H7" /></svg></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CTA SECTION -->
+    <section id="contact" class="footer-cta-section">
+        <div class="cta-container">
+            <!-- Eyes Graphic -->
+            <div class="interactive-eyes-container">
+                <div class="interactive-eye">
+                    <div class="pupil"><div class="pupil-dot"></div></div>
+                </div>
+                <div class="interactive-eye">
+                    <div class="pupil"><div class="pupil-dot"></div></div>
+                </div>
+            </div>
+
+            <!-- THANK YOU Text -->
+            <div class="cta-title hero-text">
+                <div class="cta-word group-thank">
+                    <span class="letter font-serif"><span class="skew-letter">T</span></span>
+                    <span class="letter font-bold"><span class="skew-letter">H</span></span>
+                    <span class="letter font-bold"><span class="skew-letter">A</span></span>
+                    <span class="letter font-tall"><span class="skew-letter">N</span></span>
+                    <span class="letter font-pixel"><span class="skew-letter">K</span></span>
+                </div>
+                <div class="cta-space" style="width: 2vw;"></div> <!-- space -->
+                <div class="cta-word group-you">
+                    <span class="letter font-star" style="transform: translateY(2vw);"><span class="skew-letter">Y</span></span>
+                    <span class="letter font-outline"><span class="skew-letter">O</span></span>
+                    <span class="letter font-mono"><span class="skew-letter">U</span></span>
+                </div>
+                <div class="cta-word group-exclaim">
+                    <span class="letter font-serif"><span class="skew-letter">!</span></span>
+                </div>
+            </div>
+
+            <!-- Contact Text & Button -->
+            <div class="cta-contact">
+                <p>Let's make a stunning work together</p>
+                <div class="contact-links">
+                    <a href="mailto:sangkalalaji98@gmail.com" class="cta-button">sangkalalaji98@gmail.com</a>
+                    <a href="tel:085795603927" class="cta-button">085795603927</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © 2026 SANG KALA AJI. All rights reserved.
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
