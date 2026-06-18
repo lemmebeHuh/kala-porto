@@ -1417,6 +1417,112 @@ main {
     margin: 0 -0.5vw;
 }
 
+/* --- COMPREHENSIVE MOBILE OPTIMIZATION --- */
+@media (max-width: 600px) {
+    /* Adjust main section paddings for narrow screens */
+    .about-section, .resume-section, .skills-section, .contents-section, .footer-cta-section {
+        padding: 4rem 1.5rem;
+        min-height: auto; /* Allow sections to fit content if taller than viewport */
+    }
+
+    /* Shrink the floating UI so it doesn't clutter the screen */
+    .hamburger-btn {
+        top: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Adjust About Section typography */
+    .about-heading { font-size: 2.5rem; }
+    .star-graphic { font-size: 3rem; left: -0.5rem; }
+    .about-text-top, .about-text-bottom { 
+        font-size: 1rem; 
+        line-height: 1.5; 
+        text-align: left; 
+        text-align-last: left; 
+    }
+
+    /* Fix Skills container and items */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .skill-tag {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    .skills-header h2 { font-size: 1.6rem; }
+    
+    /* Project Dividers */
+    .project-divider-section {
+        padding: 3rem 1.5rem;
+        min-height: auto;
+    }
+    .divider-main {
+        gap: 2rem;
+    }
+    .divider-number { font-size: 25vw; }
+    .divider-title h2 { font-size: 18vw; }
+    .divider-footer {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        font-size: 0.9rem;
+    }
+
+    /* Project Gallery Details */
+    .gallery-header-wrapper {
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+    }
+    .gallery-header-top, .gallery-header-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .gallery-title { font-size: 1.2rem; }
+    .gallery-project { font-size: 1.1rem; }
+    
+    .project-details {
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+    }
+
+    /* Contents Grid */
+    .content-number { font-size: 1.5rem; }
+    .content-info h3 { font-size: 1.2rem; }
+    .content-info p { font-size: 0.95rem; }
+
+    /* Footer / CTA */
+    .cta-container { gap: 2rem; }
+    .cta-contact {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    .footer-copyright {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+    }
+}
+
 /* Scaling down the text a bit so it fits well */
 .cta-title .font-pixel { font-size: 10vw; transform: translateY(-0.5vw); }
 .cta-title .font-outline { font-size: 13vw; -webkit-text-stroke: 0.2vw var(--text-color); margin: 0 0.5vw; }
