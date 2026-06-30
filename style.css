@@ -1727,3 +1727,8 @@ main {
 #lokerlaundry-gallery .gallery-item {
     aspect-ratio: 4 / 5;
 }
+
+#youtube-gallery .gallery-item {
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+}
