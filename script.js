@@ -122,4 +122,28 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // Auto-play carousels
+    document.querySelectorAll('.carousel-container').forEach(container => {
+        const track = container.querySelector('.carousel-track');
+        if (!track) return;
+        const images = track.querySelectorAll('.carousel-img');
+        if (images.length > 1) {
+            let currentIndex = 0;
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }, 3000); // Change image every 3 seconds
+        }
+    });
+
+    // Direct Link Logic
+    document.querySelectorAll('.gallery-item[data-post-url]').forEach(item => {
+        item.addEventListener('click', () => {
+            const url = item.getAttribute('data-post-url');
+            if (url) {
+                window.open(url, '_blank');
+            }
+        });
+    });
 });

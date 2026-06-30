@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F6F4F0">
+    <title>Social Media Works | Sang Kala Aji</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Press+Start+2P&family=Rubik+Mono+One&family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+    
+    <style>
+        .ig-wrapper {
+            background-color: var(--bg-color); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border: 2px solid var(--text-color);
+            border-radius: 0;
+            box-shadow: 12px 12px 0px var(--primary-pink);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ig-wrapper:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 16px 16px 0px var(--primary-blue);
+        }
+        
+        .social-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 4rem;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 6rem;
+            box-sizing: border-box;
+        }
+
+        .ig-embed-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .notice-banner {
+            background: var(--primary-yellow);
+            color: var(--text-color);
+            padding: 1.5rem 2rem;
+            border: 2px solid var(--text-color);
+            margin: 0 auto 4rem auto;
+            font-weight: 500;
+            font-size: 1.1rem;
+            text-align: center;
+            box-shadow: 6px 6px 0px var(--text-color);
+            max-width: 1280px;
+            width: calc(100% - 12rem);
+        }
+
+        @media (max-width: 900px) {
+            .social-gallery-grid {
+                padding: 0 2rem;
+            }
+            .notice-banner {
+                width: calc(100% - 4rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="index.html#about" class="popup-link"><span class="nav-num">01.</span> About</a></li>
+                <li><a href="index.html#resume" class="popup-link"><span class="nav-num">02.</span> Experience</a></li>
+                <li><a href="index.html#skills" class="popup-link"><span class="nav-num">03.</span> Skills</a></li>
+                <li><a href="index.html#contents" class="popup-link"><span class="nav-num">04.</span> Contents</a></li>
+                <li><a href="index.html#contact" class="popup-link"><span class="nav-num">05.</span> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sticky Hamburger Button -->
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <header style="padding: 2.5rem 3.5rem; position: absolute; width: 100%; box-sizing: border-box; top: 0; left: 0; z-index: 100;">
+        <div class="name"><a href="index.html" class="nav-link">SANG KALA AJI</a></div>
+    </header>
+
+    <!-- BRUTALIST HEADER -->
+    <section class="project-divider-section" style="min-height: 70vh;">
+        <div class="divider-container">
+            <div class="divider-main" style="align-items: flex-end;">
+                <div class="divider-number">
+                    <span class="icon-asterisk pink-asterisk">✱</span>
+                </div>
+                <div class="divider-title">
+                    <h2 style="font-size: 11vw;">SOCIAL MEDIA</h2>
+                </div>
+            </div>
+            <div class="divider-footer">
+                <div class="divider-projects">Video Content & Reels</div>
+                <div class="divider-year">2026</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT GALLERY SECTION -->
+    <section class="project-gallery-section">
+        <div class="gallery-header-wrapper">
+            <div class="gallery-header-top">
+                <div class="gallery-title"><strong>04.</strong> SOCIAL MEDIA CONTENT</div>
+                <div class="gallery-project">Instagram Video Works</div>
+            </div>
+            <div class="gallery-header-bottom">
+                <div class="gallery-tools">Source<br><span class="tools-highlight">Instagram Reels</span></div>
+                <div class="gallery-like">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="notice-banner">
+            <strong>TECHNICAL NOTE:</strong> Instagram iframe embeds do not support "Autoplay" or "Loop" functions due to strict platform and browser policies. 
+            <br>
+            Untuk membuat efek mutar otomatis persis seperti GIF, unduh file <code>.mp4</code> asli dari karya tersebut dan gunakan tag HTML5 Video standar.
+        </div>
+
+                                <div class="masonry-gallery">
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DQRaboPE1oJ.jpg" data-video="Instagram_Videos/DQRaboPE1oJ.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DNr6tgbQGeJ.jpg" data-video="Instagram_Videos/DNr6tgbQGeJ.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DNum6nRQFv3.jpg" data-video="Instagram_Videos/DNum6nRQFv3.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DQTo_zBk02j.jpg" data-video="Instagram_Videos/DQTo_zBk02j.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DPX_TroiSSR.jpg" data-video="Instagram_Videos/DPX_TroiSSR.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DRWllqeE9Zl.jpg" data-video="Instagram_Videos/DRWllqeE9Zl.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DR6oyVEkxDG.jpg" data-video="Instagram_Videos/DR6oyVEkxDG.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DQi-5FwE8Y2.jpg" data-video="Instagram_Videos/DQi-5FwE8Y2.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DP_F_LviQKK.jpg" data-video="Instagram_Videos/DP_F_LviQKK.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DPH5KxRDjFZ.jpg" data-video="Instagram_Videos/DPH5KxRDjFZ.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DO0XtFxgadK.jpg" data-video="Instagram_Videos/DO0XtFxgadK.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DOkdCk7jkPW.jpg" data-video="Instagram_Videos/DOkdCk7jkPW.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DQ_MQzbjhgM.jpg" data-video="Instagram_Videos/DQ_MQzbjhgM.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DSOfGuXE7oP.jpg" data-video="Instagram_Videos/DSOfGuXE7oP.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DPRf8YUDjFQ.jpg" data-video="Instagram_Videos/DPRf8YUDjFQ.mp4" class="masonry-thumb" style="height: 300px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DPtAm6OgPGL.jpg" data-video="Instagram_Videos/DPtAm6OgPGL.mp4" class="masonry-thumb" style="height: 300px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DPz1CnEkzzF.jpg" data-video="Instagram_Videos/DPz1CnEkzzF.mp4" class="masonry-thumb" style="height: 300px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DPRg2oUDsWx.jpg" data-video="Instagram_Videos/DPRg2oUDsWx.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DN90_5NgAtC.jpg" data-video="Instagram_Videos/DN90_5NgAtC.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DONjvftgGMT.jpg" data-video="Instagram_Videos/DONjvftgGMT.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DODbIWqk0qd.jpg" data-video="Instagram_Videos/DODbIWqk0qd.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DPc2cidE4ER.jpg" data-video="Instagram_Videos/DPc2cidE4ER.mp4" class="masonry-thumb" style="height: 400px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DO2Qr5uDhdF.jpg" data-video="Instagram_Videos/DO2Qr5uDhdF.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DQzGAZek-QY.jpg" data-video="Instagram_Videos/DQzGAZek-QY.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DSMqTwQk1uw.jpg" data-video="Instagram_Videos/DSMqTwQk1uw.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DOhaqBpDvHE.jpg" data-video="Instagram_Videos/DOhaqBpDvHE.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DO28ephj3wb.jpg" data-video="Instagram_Videos/DO28ephj3wb.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DOzvGVajrN7.jpg" data-video="Instagram_Videos/DOzvGVajrN7.mp4" class="masonry-thumb" style="height: 300px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DR9oxlhE3CE.jpg" data-video="Instagram_Videos/DR9oxlhE3CE.mp4" class="masonry-thumb" style="height: 300px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DOCvfa1E3yl.jpg" data-video="Instagram_Videos/DOCvfa1E3yl.mp4" class="masonry-thumb" style="height: 400px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DRE2jSvDsEk.jpg" data-video="Instagram_Videos/DRE2jSvDsEk.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DPqwsE6E0xj.jpg" data-video="Instagram_Videos/DPqwsE6E0xj.mp4" class="masonry-thumb" style="height: 400px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DQz7xKxk_rf.jpg" data-video="Instagram_Videos/DQz7xKxk_rf.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DRZDktlk-OF.jpg" data-video="Instagram_Videos/DRZDktlk-OF.mp4" class="masonry-thumb" style="height: 400px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DQOmQWmk3qz.jpg" data-video="Instagram_Videos/DQOmQWmk3qz.mp4" class="masonry-thumb" style="height: 400px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DPIO-8vjpSY.jpg" data-video="Instagram_Videos/DPIO-8vjpSY.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DRpHzuQk1w0.jpg" data-video="Instagram_Videos/DRpHzuQk1w0.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DOSHJ_zk5uX.jpg" data-video="Instagram_Videos/DOSHJ_zk5uX.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DOPWlHZE9De.jpg" data-video="Instagram_Videos/DOPWlHZE9De.mp4" class="masonry-thumb" style="height: 400px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-pink);">
+                <img src="Instagram_Videos/DRrq3IEExx6.jpg" data-video="Instagram_Videos/DRrq3IEExx6.mp4" class="masonry-thumb" style="height: 450px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-blue);">
+                <img src="Instagram_Videos/DP8hIlkjiva.jpg" data-video="Instagram_Videos/DP8hIlkjiva.mp4" class="masonry-thumb" style="height: 500px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="masonry-item" style="box-shadow: 8px 8px 0px var(--primary-yellow);">
+                <img src="Instagram_Videos/DOAU0jRE9uH.jpg" data-video="Instagram_Videos/DOAU0jRE9uH.mp4" class="masonry-thumb" style="height: 300px; object-fit: cover;" alt="Instagram Reel">
+                <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+        </div>
+
+        <!-- Video Lightbox Modal -->
+        <div id="videoModal" class="video-modal">
+            <button class="close-modal">&times;</button>
+            <div class="video-modal-content">
+                <video id="modalVideo" controls autoplay></video>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const modal = document.getElementById('videoModal');
+                const videoElement = document.getElementById('modalVideo');
+                const closeBtn = document.querySelector('.close-modal');
+                const thumbs = document.querySelectorAll('.masonry-thumb');
+                const playOverlays = document.querySelectorAll('.play-overlay');
+
+                const openModal = (videoSrc) => {
+                    videoElement.src = videoSrc;
+                    modal.classList.add('active');
+                    videoElement.play();
+                };
+
+                const closeModal = () => {
+                    modal.classList.remove('active');
+                    videoElement.pause();
+                    videoElement.src = '';
+                };
+
+                thumbs.forEach((thumb, idx) => {
+                    const clickHandler = () => {
+                        const videoSrc = thumb.getAttribute('data-video');
+                        openModal(videoSrc);
+                    };
+                    thumb.addEventListener('click', clickHandler);
+                    playOverlays[idx].addEventListener('click', clickHandler);
+                });
+
+                closeBtn.addEventListener('click', closeModal);
+                modal.addEventListener('click', (e) => {
+                    if(e.target === modal) closeModal();
+                });
+            });
+        </script>
+
+</body>
+</html>
